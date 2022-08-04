@@ -1,0 +1,51 @@
+<html lang="en">
+	
+	
+<%- include header %>
+
+<div class="jumbotron">
+		<h2>Welcome</h2>
+		  <% if (name&&emotion) { %>
+			<h1> <%= name %> </h1><br>
+			<p><%= emotion %> songs are being played </p> <br>
+	<% } %>
+	<% if ( emotion == 'Angry' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/eT3xIgzbhGM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					  <% }
+	else if(emotion == 'Disgusted' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/1f6F7tGDcQw?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						  
+		<% }
+	else if(emotion == 'Fearful' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/h9kD9mg3o9w?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						  
+		<% }
+	else if(emotion == 'Happy' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/OYuRPH17pLs?autopaly=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							  
+			<% }
+	else if(emotion == 'Neutral' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/pJgoHgpsb9I?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  
+				<% }
+	else if(emotion == 'Sad' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/FskL-2jrgF0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									  
+					<% }	
+	else if(emotion == 'Surprised' ) { %>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/zMINv5ggLww?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										  
+						<% }									
+		%>
+	<script>
+		function refresh(){
+			  window.location.reload("Refresh")
+			}
+	  </script>
+	<p><input type="button" value="Refresh" onClick="refresh(this)"></p>  
+	<p>
+		<a class="btn btn-lg btn-primary" href="/home/profile" title="">Profile View >></a>
+	</p>
+</div>	
+
+<%- include footer %>
