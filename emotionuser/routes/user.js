@@ -40,7 +40,7 @@ exports.login = function(req, res){
             req.session.user = results[0];
             console.log(results[0].first_name);
             dispname=results[0].first_name;
-            res.redirect('/home/dashboard');
+            res.redirect('dashboard');
          }
          else{
             message = 'Wrong Credentials.';
@@ -61,7 +61,7 @@ exports.dashboard = function(req, res, next){
    userId = req.session.userId;
    console.log('ddd='+userId);
    if(userId == null){
-      res.redirect("/login");
+      res.redirect("login");
       return;
    }
 
@@ -69,7 +69,7 @@ exports.dashboard = function(req, res, next){
 const fs = require('fs');
 getemotion();
 function getemotion(){
-var student = JSON.parse(fs.readFileSync('C:/Users/Anandakumar VK/Downloads/em/src/emotion.json'));
+var student = JSON.parse(fs.readFileSync('C:/Users/Anandakumar VK/Downloads/em/music-recommendation-based-on-users-facial-emotion/srcemotion.json'));
 console.log(student);
 res.render('dashboard.ejs', {name:dispname,emotion:student});    ;
 emotionwait(); 

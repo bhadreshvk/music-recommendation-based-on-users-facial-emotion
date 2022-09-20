@@ -1,7 +1,7 @@
 /**
 * Module dependencies.
 */
-const exec = require('child_process').exec;
+const exec = require('child_process').exec; 
 const express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
@@ -15,7 +15,7 @@ let bodyParser=require("body-parser");
 let connection = mysql.createConnection({
               host     : 'localhost',
               user     : 'root',
-              password : 'teddy',
+              password : 'NewPassword',
               database : 'test'
             });
  
@@ -26,7 +26,7 @@ connection.connect();
 global.db = connection;
  
 // all environments
-app.set('port', process.env.PORT || 8080);
+//app.set('port', process.env.PORT || 8080);
 //app.set('domain', '192.168.1.10');
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
@@ -36,7 +36,7 @@ app.use(express.static('public'))
 
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
-              secret: 'keyboard cat',
+              secret: 'music by your facial expression',
               resave: true,
               saveUninitialized: true,
               cookie: { maxAge: 9999999 }
@@ -58,7 +58,7 @@ app.listen(8080)
 
 var commands = [
   ' C:/ProgramData/Miniconda3/Scripts/activate.bat C:/ProgramData/Miniconda3 ',
-  'cd C:/Users/Anandakumar VK/Downloads/em/src',
+  'cd C:/Users/Anandakumar VK/Downloads/em/music-recommendation-based-on-users-facial-emotion/src/',
   'conda activate tf',
   'python ./em.py',
 ]
