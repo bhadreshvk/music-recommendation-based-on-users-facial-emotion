@@ -1,6 +1,4 @@
-/**
-* Module dependencies.
-*/
+
 const exec = require('child_process').exec; 
 const express = require('express')
   , routes = require('./routes')
@@ -70,3 +68,18 @@ function(error, stdout, stderr){
   console.log(stderr)
 }
 );
+
+/*
+process.on('SIGTERM', () => {
+  server.close(() => {
+    console.log('Process terminated');
+  });
+});
+*/
+/*
+Auhtors 
+BHADRESH VK (AWH19CS017)  
+SALIN NV (AWH19CS037)
+SIDRATHUL MUNTHAHA PV (AWH19CS041)
+SREEHARI KA(LAWH19CS050)
+*/

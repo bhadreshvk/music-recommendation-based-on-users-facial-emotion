@@ -41,8 +41,10 @@ cv2.ocl.setUseOpenCL(False)
 
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
 
+with open("emotion.json", "w") as reseteapi:
+                json.dump("reset emotion", reseteapi)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 while True:
 
         ret, frame = cap.read()
@@ -58,6 +60,7 @@ while True:
             cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray, (48, 48)), -1), 0)
             prediction = model.predict(cropped_img)
             maxindex = int(np.argmax(prediction))
+            global a
             a=emotion_dict[maxindex]
             with open("emotion.json", "w") as emoapi:
                 json.dump(a, emoapi)
@@ -71,7 +74,12 @@ while True:
 
         cv2.imshow('Video', cv2.resize(frame,(980,620),interpolation = cv2.INTER_CUBIC))
         if cv2.waitKey(1) & 0xFF == ord('q'):
+            with open("emotion.json", "w") as exitapi:
+
+                json.dump('exit',exitapi)
             break
 
+with open("emotion.json", "w") as reseteapi:
+                json.dump("reset emotion", reseteapi)
 cap.release()
 cv2.destroyAllWindows()
