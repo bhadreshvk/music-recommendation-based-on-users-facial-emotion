@@ -44,7 +44,7 @@ emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutra
 with open("emotion.json", "w") as reseteapi:
                 json.dump("reset emotion", reseteapi)
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 while True:
 
         ret, frame = cap.read()
@@ -55,13 +55,13 @@ while True:
         faces = facecasc.detectMultiScale(gray,scaleFactor=1.3, minNeighbors=5)
 
         for (x, y, w, h) in faces:
-            cv2.rectangle(frame, (x, y-50), (x+w, y+h+10), (4, 111, 162), 2)
+            cv2.rectangle(frame, (x, y-50), (x+w, y+h+10), (255, 0, 0), 2)
             roi_gray = gray[y:y + h, x:x + w]
             cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray, (48, 48)), -1), 0)
             snap =frame[y:y + h, x:x + w]
-            
-            snapname="emotionclick.jpeg"
+            snapname="emotionclick.png"
             cv2.imwrite(snapname,snap)
+            
             prediction = model.predict(cropped_img)
             maxindex = int(np.argmax(prediction))
             
