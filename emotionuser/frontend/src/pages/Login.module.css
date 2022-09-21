@@ -1,0 +1,300 @@
+.icon,
+.vectorIcon {
+  position: absolute;
+  height: 93.42%;
+  width: 66.61%;
+  top: 3.3%;
+  right: 1.15%;
+  bottom: 3.28%;
+  left: 32.24%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.icon {
+  height: 28.99%;
+  width: 21.83%;
+  top: 2.23%;
+  right: 18.39%;
+  bottom: 68.78%;
+  left: 59.77%;
+}
+.privacyPolicyRafiki1,
+.privacyPolicyRafiki3 {
+  position: absolute;
+  top: 171px;
+  left: 565.14px;
+  width: 776.71px;
+  height: 651px;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.privacyPolicyRafiki3 {
+  top: 199px;
+  left: 662px;
+  width: 651px;
+  opacity: 0.2;
+}
+.freepikBackgroundCompleteIcon {
+  position: absolute;
+  height: 69.29%;
+  width: 100%;
+  top: 11%;
+  right: 0;
+  bottom: 19.71%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.freepikDeviceInject33Icon,
+.freepikShadowInject33Icon {
+  position: absolute;
+  height: 4.53%;
+  width: 77.56%;
+  top: 80.87%;
+  right: 11.22%;
+  bottom: 14.6%;
+  left: 11.22%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.freepikDeviceInject33Icon {
+  height: 52.65%;
+  width: 34.15%;
+  top: 29.17%;
+  right: 24.22%;
+  bottom: 18.18%;
+  left: 41.63%;
+}
+.freepikCharacterInject33Icon,
+.freepikDocumentInject33Icon {
+  position: absolute;
+  height: 38.16%;
+  width: 28.45%;
+  top: 29.61%;
+  right: 43.75%;
+  bottom: 32.23%;
+  left: 27.8%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.freepikCharacterInject33Icon {
+  height: 52.08%;
+  width: 21.26%;
+  top: 30.59%;
+  right: 57.14%;
+  bottom: 17.33%;
+  left: 21.6%;
+}
+.div {
+  position: absolute;
+  top: 440px;
+  left: 36px;
+  font-weight: 500;
+  display: inline-block;
+  width: 739px;
+  height: 198px;
+}
+.privacyPolicyRafiki2 {
+  position: absolute;
+  top: 151px;
+  left: 710px;
+  width: 651px;
+  height: 651px;
+  overflow: hidden;
+}
+.logInB {
+  position: relative;
+  display: inline-block;
+}
+.titleDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.vuesaxbulkgoogleIcon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.loginDiv1 {
+  position: relative;
+  line-height: 37px;
+  font-weight: 600;
+  display: inline-block;
+}
+.frameDiv1 {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 5px 7px 70px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: row;
+  padding: 15px 70px 15px 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 25px;
+  color: #435673;
+}
+.frameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 58px;
+}
+.namegmailcomDiv {
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+}
+.frameDiv3 {
+  border-radius: 10px;
+  border: 1px solid rgba(60, 73, 92, 0.3);
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 140px 20px 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.forgotPasswordDiv {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+}
+.rectangleDiv {
+  position: relative;
+  border-radius: 5px;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+.stayLogedinDiv {
+  position: relative;
+  background: linear-gradient(112.94deg, #415675, #4f70a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.frameDiv7 {
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+  font-size: 16px;
+}
+.frameDiv2,
+.frameDiv5,
+.frameDiv7 {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameDiv5 {
+  flex-direction: row;
+  align-items: center;
+  gap: 42px;
+  font-size: 18px;
+  color: #435673;
+}
+.frameDiv2 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 29px;
+  font-size: 23px;
+}
+.frameDiv9,
+.lineDiv {
+  box-sizing: border-box;
+}
+.frameDiv9 {
+  border-radius: 10px;
+  background: linear-gradient(117.49deg, #384a65, #6e8ebd);
+  box-shadow: 8px 8px 60px rgba(60, 73, 92, 0.2);
+  display: flex;
+  flex-direction: row;
+  padding: 15px 45px 15px 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.lineDiv {
+  position: relative;
+  border-top: 1px solid rgba(67, 86, 115, 0.1);
+  width: 326px;
+  height: 1px;
+  flex-shrink: 0;
+}
+.dontHaveAn {
+  font-weight: 300;
+}
+.signUpSpan {
+  font-weight: 500;
+  color: #3d5a86;
+}
+.dontHaveAnAccountYetSig {
+  position: relative;
+  line-height: 37px;
+  display: inline-block;
+}
+.formDiv,
+.frameDiv10,
+.frameDiv8 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: #435673;
+}
+.formDiv,
+.frameDiv8 {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 25px;
+  color: #fff;
+}
+.formDiv {
+  position: absolute;
+  top: 116px;
+  left: 115px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 56px;
+  font-size: 60px;
+  color: #43546f;
+}
+.icon1,
+.icon2 {
+  position: absolute;
+  height: 10.81%;
+  width: 7.66%;
+  top: 1.86%;
+  right: 92.34%;
+  bottom: 87.34%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.icon2 {
+  height: 7.09%;
+  width: 22.97%;
+  top: 74.92%;
+  right: 70.43%;
+  bottom: 17.99%;
+  left: 6.61%;
+}
+.loginDiv {
+  position: relative;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 25px;
+  color: #000;
+  font-family: Poppins;
+}
