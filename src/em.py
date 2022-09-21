@@ -58,12 +58,21 @@ while True:
             cv2.rectangle(frame, (x, y-50), (x+w, y+h+10), (255, 0, 0), 2)
             roi_gray = gray[y:y + h, x:x + w]
             cropped_img = np.expand_dims(np.expand_dims(cv2.resize(roi_gray, (48, 48)), -1), 0)
+            snap =frame[y:y + h, x:x + w]
+            snapname="emotionclick.png"
+            cv2.imwrite(snapname,snap)
+            
             prediction = model.predict(cropped_img)
             maxindex = int(np.argmax(prediction))
+            
             global a
             a=emotion_dict[maxindex]
+            
+            
             with open("emotion.json", "w") as emoapi:
                 json.dump(a, emoapi)
+                
+                
             cv2.putText(frame, emotion_dict[maxindex], (x+20, y-60), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
 
 
