@@ -30,7 +30,8 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static('public'))
+
+app.use(express.static("C:/Users/Anandakumar VK/Downloads/em/music-recommendation-based-on-users-facial-emotion/src"))
 
 // app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
@@ -43,13 +44,19 @@ app.use(session({
 // development only
  
 app.get('/', routes.index);//call for main index page
+app.get('/index', routes.index);
+app.get('/home/index', routes.index);
 app.get('/signup', user.signup);//call for signup page
 app.post('/signup', user.signup);//call for signup post 
 app.get('/login', routes.index);//call for login page
 app.post('/login', user.login);//call for login post
-app.get('/home/dashboard', user.dashboard);//call for dashboard page after login
-app.get('/home/logout', user.logout);//call for logout
-app.get('/home/profile',user.profile);//to render users profile
+app.get('/dashboard', user.dashboard);//call for dashboard page after login
+app.get('/logout', user.logout);//call for logout
+app.get('/profile',user.profile);//to render users profile
+app.get('/home/profile',user.profile);
+
+app.get('/home/dashboard', user.dashboard);
+app.get('/home/logout',user.logout);
 //Middleware
 app.listen(8080)
 

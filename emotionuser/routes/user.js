@@ -57,11 +57,11 @@ exports.login = function(req, res){
            
 exports.dashboard = function(req, res, next){
            
-   var user =  req.session.user,
+   var usernameprint =  req.session.user,
    userId = req.session.userId;
-   console.log('ddd='+userId);
+   console.log(usernameprint+' '+userId);
    if(userId == null){
-      res.redirect("login");
+      res.redirect("index");
       return;
    }
 
@@ -69,7 +69,7 @@ exports.dashboard = function(req, res, next){
 const fs = require('fs');
 getemotion();
 function getemotion(){
-var student = JSON.parse(fs.readFileSync('C:/Users/Anandakumar VK/Downloads/em/music-recommendation-based-on-users-facial-emotion/srcemotion.json'));
+var student = JSON.parse(fs.readFileSync('C:/Users/Anandakumar VK/Downloads/em/music-recommendation-based-on-users-facial-emotion/src/emotion.json'));
 console.log(student);
 res.render('dashboard.ejs', {name:dispname,emotion:student});    ;
 emotionwait(); 
@@ -85,7 +85,7 @@ async function emotionwait() {
 //------------------------------------logout functionality----------------------------------------------
 exports.logout=function(req,res){
    req.session.destroy(function(err) {
-      res.redirect("/login");
+      res.redirect("index");
    })
 };
 //--------------------------------render user details after login--------------------------------
@@ -93,7 +93,7 @@ exports.profile = function(req, res){
 
    var userId = req.session.userId;
    if(userId == null){
-      res.redirect("/login");
+      res.redirect("index");
       return;
    }
 
@@ -106,7 +106,7 @@ exports.profile = function(req, res){
 exports.editprofile=function(req,res){
    var userId = req.session.userId;
    if(userId == null){
-      res.redirect("/login");
+      res.redirect("index");
       return;
    }
 
